@@ -1,16 +1,16 @@
-import Sort.BubbleSort;
+import Sort.Sort;
 
 public class TestApp {
 
 	public static void main(String[] args) {
-		BubbleSort bubbleSort = new BubbleSort();
-		int i = 20;
+		Sort sorter = new Sort();
+		helper helper = new helper();
+		int i = 10;
 		int[] intArray = new int[i];
-		intArray = bubbleSort.loadArray(i);
-		bubbleSort.displayArray(intArray);
-		bubbleSort.BubbleSort(intArray);
-		bubbleSort.displayArray(intArray);
-
+		intArray = helper.loadArray(i);
+		helper.displayArray(intArray);
+		sorter.BubbleSort(intArray);
+		helper.displayArray(intArray);
 	}
 
 }
